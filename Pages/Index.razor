@@ -1,0 +1,81 @@
+﻿@page "/"
+@using MudBlazor
+
+<PageTitle>Index</PageTitle>
+<MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
+
+    <!-- Svenska -->
+    <MudTabPanel Text="Svenska">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudPaper Class="d-flex align-center justify-center mud-width-full py-10 px-6 mb-4">
+                    <MudText Typo="Typo.h1" Align="Align.Center">
+                        Välkommen till EasyLearn
+                    </MudText>
+                </MudPaper>
+            </MudItem>
+
+            <MudItem xs="6">
+                <MudPaper Class="pa-6">
+                    <MudText Typo="Typo.h6">
+                        Här kan du träna på Kinesiska tecken på ett enkelt och roligt sätt.
+                        Börja träna genom att välja flashcard i vänstra menyn.
+                    </MudText>
+                </MudPaper>
+            </MudItem>
+
+            <MudItem xs="6">
+                <MudPaper Class="pa-6">
+                    <MudText Typo="Typo.h6">
+                        Denna utbildningen kan också göras från Spanska till Kinesiska
+                        och från Kinesiska till Kinesiska för att få det extra utmanande.
+                    </MudText>
+                </MudPaper>
+            </MudItem>
+        </MudGrid>
+    </MudTabPanel>
+
+    @*Chinese *@
+     <MudTabPanel Text="中文">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudPaper Class="d-flex align-center justify-center mud-width-full py-10 px-6 mb-4">
+                    <MudText Typo="Typo.h1" Align="Align.Center">
+                        欢迎来到 EasyLearn
+                    </MudText>
+                </MudPaper>
+            </MudItem>
+            
+            <MudItem xs="6">
+                <MudPaper Class="pa-6">
+                    <MudText Typo="Typo.h6">
+                        在这里，你可以轻松有趣地练习汉字。通过选择左侧菜单中的抽人开始练习！
+                    </MudText>
+                </MudPaper>
+            </MudItem>
+
+            <MudItem xs="6">
+                <MudPaper Class="pa-6">
+                    <MudText Typo="Typo.h6">
+                        此培训也可以通过西班牙语-汉语和瑞典语-汉语进行。
+                    </MudText>
+                </MudPaper>
+            </MudItem>
+        </MudGrid>
+    </MudTabPanel>
+
+    <!-- Español -->
+    <MudTabPanel Text="Español">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudPaper Class="d-flex align-center justify-center mud-width-full py-10 px-6">
+                    <MudText Typo="Typo.h5" Align="Align.Center">
+                        Aquí puedes practicar caracteres chinos de una manera fácil y divertida.
+                        Comienza a entrenar eligiendo flashcard en el menú de la izquierda.
+                    </MudText>
+                </MudPaper>
+            </MudItem>
+        </MudGrid>
+    </MudTabPanel>
+
+</MudTabs>
