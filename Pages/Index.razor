@@ -4,13 +4,13 @@
 <PageTitle>Index</PageTitle>
 <MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6">
 
-    <!-- Svenska -->
+    @* Svenska *@
     <MudTabPanel Text="Svenska">
         <MudGrid>
             <MudItem xs="12">
                 <MudPaper Class="d-flex align-center justify-center mud-width-full py-10 px-6 mb-4">
                     <MudText Typo="Typo.h1" Align="Align.Center">
-                        Välkommen till EasyLearn
+                        Välkommen till EasyLearn!
                     </MudText>
                 </MudPaper>
             </MudItem>
@@ -35,7 +35,7 @@
         </MudGrid>
     </MudTabPanel>
 
-    @*Chinese *@
+    @* 中文 *@
      <MudTabPanel Text="中文">
         <MudGrid>
             <MudItem xs="12">
@@ -64,18 +64,33 @@
         </MudGrid>
     </MudTabPanel>
 
-    <!-- Español -->
+     @* Español *@
     <MudTabPanel Text="Español">
         <MudGrid>
             <MudItem xs="12">
-                <MudPaper Class="d-flex align-center justify-center mud-width-full py-10 px-6">
-                    <MudText Typo="Typo.h5" Align="Align.Center">
+                <MudPaper Class="d-flex align-center justify-center mud-width-full py-10 px-6 mb-4">
+                    <MudText Typo="Typo.h1" Align="Align.Center">
+                        ¡Bienvenido a EasyLearn!
+                    </MudText>
+                </MudPaper>
+            </MudItem>
+
+            <MudItem xs="6">
+                <MudPaper Class="pa-6">
+                    <MudText Typo="Typo.h6">
                         Aquí puedes practicar caracteres chinos de una manera fácil y divertida.
                         Comienza a entrenar eligiendo flashcard en el menú de la izquierda.
                     </MudText>
                 </MudPaper>
             </MudItem>
+
+            <MudItem xs="6">
+                <MudPaper Class="pa-6">
+                    <MudText Typo="Typo.h6">
+                        Este curso también se puede realizar del sueco al chino o incluso del chino al chino para hacerlo más desafiante.
+                    </MudText>
+                </MudPaper>
+            </MudItem>
         </MudGrid>
     </MudTabPanel>
-
 </MudTabs>

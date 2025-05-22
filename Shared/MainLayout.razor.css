@@ -1,17 +1,46 @@
-.page {
+﻿.page {
     position: relative;
     display: flex;
     flex-direction: column;
+    background-color: #fdf6e3; /* Ljus beige bakgrund */
 }
 
 main {
     flex: 1;
 }
 
+/* Sidomeny – bakgrund i kejsargul gradient */
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(180deg, #FFC107 0%, #FF8F00 100%);
+    width: 250px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
+/* 🟤 Färg för text och ikoner i sidomenyn */
+.sidebar .mud-nav-link,
+.sidebar .mud-nav-link-text,
+.sidebar .mud-icon-root {
+    color: #050301 !important;
+}
+
+/* Aktiv menyval – bakgrund vinröd, text vit */
+.sidebar .mud-nav-link-active {
+    background-color: #880e4f !important;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+/* Hovereffekt */
+.sidebar .mud-nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+/* Toppmeny */
 .top-row {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
@@ -19,18 +48,25 @@ main {
     height: 3.5rem;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-left: 2rem !important;
+    padding-right: 1.5rem !important;
 }
 
-    .top-row ::deep a, .top-row .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-    }
+.top-row ::deep a,
+.top-row .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+}
 
-    .top-row a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.top-row a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+/* Mobilanpassning */
 @media (max-width: 640.98px) {
     .top-row:not(.auth) {
         display: none;
@@ -40,7 +76,8 @@ main {
         justify-content: space-between;
     }
 
-    .top-row a, .top-row .btn-link {
+    .top-row a,
+    .top-row .btn-link {
         margin-left: 0;
     }
 }
@@ -48,23 +85,5 @@ main {
 @media (min-width: 641px) {
     .page {
         flex-direction: row;
-    }
-
-    .sidebar {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
     }
 }
